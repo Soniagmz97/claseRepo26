@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const BtnPreview = () => {
+const ContadorSkills = () => {
     const [puntos, setPuntos] = useState<number>(0);
 
     const increase = () => setPuntos(puntos + 1);
@@ -33,4 +33,4 @@ const BtnPreview = () => {
     );
 };
 
-export default BtnPreview;
+export default ContadorSkills;
