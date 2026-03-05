@@ -4,7 +4,7 @@ interface InfoProps {
   experiencia: number;
 }
 
-export function InfoBasica({ nombre, especialidad, experiencia }: InfoProps) {
+const InfoBasica = ({ nombre, especialidad, experiencia }: InfoProps) => {
   return (
     <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-indigo-500">
       <h2 className="text-2xl font-bold text-gray-800">{nombre}</h2>
@@ -13,3 +13,5 @@ export function InfoBasica({ nombre, especialidad, experiencia }: InfoProps) {
     </div>
   );
 }
+
+export default InfoBasica;

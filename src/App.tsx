@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Suscripcion from './Suscripcion'
+import ContadorSkills from './components/ContadorSkill/ContadorSkill'
+import InfoBasica   from './components/InfoBasica/InfoBasica'
+import Suscripcion from './components/Suscripcion/Suscripcion'
 
 function App() {
 
   return (
     <>
-      <Suscripcion></Suscripcion>
+      <InfoBasica nombre='Sonia' especialidad='Team Leader' experiencia={3}/>
+      <ContadorSkills />
+      <Suscripcion />
     </>
   )
 }
